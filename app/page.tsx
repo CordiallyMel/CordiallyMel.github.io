@@ -68,7 +68,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="hero-art" aria-label="Selected system footprint">
+          <div className="hero-art" aria-label="Illustrative 3D price-volume profile across time and price">
             <IridescentScene />
 
             <div className="glass console-card">
