@@ -76,7 +76,7 @@ message.
 
 Email delivery is optional and uses [Resend](https://resend.com). Set
 `RESEND_API_KEY` in the Sites Worker secrets to enable it. The notification goes
-to `MelSearles99@gmail.com` by default; override the recipient with
+to `melsearles99@gmail.com` by default; override the recipient with
 `CONTACT_NOTIFY_TO` (comma-separated addresses are accepted) and the sender with
 `CONTACT_FROM`. Without `RESEND_API_KEY`, submissions still return success and
 remain available in `/admin`.

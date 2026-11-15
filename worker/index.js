@@ -1,6 +1,6 @@
 const API_VERSION = "1.1.0";
 const MAX_BODY_BYTES = 12_000;
-const DEFAULT_NOTIFY_TO = "MelSearles99@gmail.com";
+const DEFAULT_NOTIFY_TO = "melsearles99@gmail.com";
 const DEFAULT_NOTIFY_FROM = "Mel Searles Portfolio <onboarding@resend.dev>";
 const ALLOWED_ORIGINS = new Set([
   "https://cordiallymel.github.io",
