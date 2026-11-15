@@ -1,0 +1,227 @@
+{
+  "name": "Melchezidek Searles",
+  "displayName": "Mel Searles",
+  "initials": "MS",
+  "location": "New York, NY",
+  "email": "MelSearles99@gmail.com",
+  "phone": "(929) 369-2727",
+  "kicker": "New York · Python / SQL / TypeScript",
+  "headline": "I build market systems with a researcher's discipline.",
+  "intro": "Economics student, self-taught engineer, and founder of SkyQuant. I turn noisy market data into reproducible systems — then keep testing until the evidence is boring.",
+  "shortBio": "I am an economics student at CUNY and a self-taught software engineer based in New York. I build research and execution systems for markets, with a bias toward reproducibility, clean data, and evidence that survives an audit.",
+  "links": {
+    "github": "https://github.com/CordiallyMel",
+    "linkedin": "https://www.linkedin.com/in/melchezidek-searles/",
+    "skyquant": "https://skyquantcapital.com/",
+    "skyquantInvest": "https://skyquantcapital.com/invest.html",
+    "skyquantTeam": "https://skyquantcapital.com/team.html",
+    "email": "mailto:MelSearles99@gmail.com"
+  },
+  "heroStats": [
+    {
+      "value": "67,271",
+      "label": "SPY trades replayed",
+      "detail": "SkyQ RANGE · 2003–2026"
+    },
+    {
+      "value": "160",
+      "label": "automated tests",
+      "detail": "SkyQ Sigma S engine"
+    },
+    {
+      "value": "5",
+      "label": "market integrations",
+      "detail": "Alpaca · Databento · IBKR · MT5 · LSE"
+    },
+    {
+      "value": "24",
+      "label": "years of 1-minute data",
+      "detail": "research archive"
+    }
+  ],
+  "projects": [
+    {
+      "number": "01",
+      "name": "SkyQ RANGE",
+      "eyebrow": "Research engine · public repository",
+      "summary": "A causal one-minute ETF research engine that treats costs, ambiguous fills, and negative results as part of the product.",
+      "description": "A Python and PostgreSQL research core with a React control center. The published record covers 67,271 SPY trades and 32,356 QQQ trades over 23 years, with stop-first fills and modeled costs. The same geometry was then tested on ten futures contracts and rejected after costs — a falsification record, not a hidden failure.",
+      "metrics": [
+        { "value": "67,271", "label": "SPY trades" },
+        { "value": "16 / 24", "label": "positive SPY years" },
+        { "value": "10", "label": "futures contracts rejected" }
+      ],
+      "stack": ["Python", "PostgreSQL", "SQL", "FastAPI", "React", "TypeScript", "pytest"],
+      "href": "https://github.com/CordiallyMel/SkyQ_RANGE",
+      "cta": "View the repository"
+    },
+    {
+      "number": "02",
+      "name": "SkyQ Sigma S",
+      "eyebrow": "Execution platform · private strategy",
+      "summary": "An execution-aware backtest and paper-trading system built across five broker and market-data APIs.",
+      "description": "A 43,249-trade replay engine with a 160-test suite, crash recovery, order reconciliation, an NYSE-aware calendar, and a tick-to-bar path verified against broker data. The engine, methodology, and walkthrough are available; the live rule set stays private.",
+      "metrics": [
+        { "value": "43,249", "label": "replay trades" },
+        { "value": "160", "label": "automated tests" },
+        { "value": "5", "label": "broker / data APIs" }
+      ],
+      "stack": ["Python", "pytest", "Alpaca", "IBKR", "MetaTrader 5", "Databento", "LSE"],
+      "href": "mailto:MelSearles99@gmail.com?subject=SkyQ%20Sigma%20S%20walkthrough",
+      "cta": "Request a walkthrough"
+    },
+    {
+      "number": "03",
+      "name": "SkyQuant Capital",
+      "eyebrow": "Venture · research desk",
+      "summary": "A first fund built in the right order: company-funded pilot, public evidence, then an anchor-led vehicle.",
+      "description": "A 12-month real-money pilot using $2,000–$5,000 of saved company capital and one SPY share. The proposed next step is a $25M–$50M fund with a 1/10 founders class, 1.5/15 standard terms, a 5% hurdle, and a high-water mark. No fund exists today.",
+      "metrics": [
+        { "value": "$2k–$5k", "label": "pilot capital" },
+        { "value": "12 mo", "label": "public record target" },
+        { "value": "$25M–$50M", "label": "proposed fund" }
+      ],
+      "stack": ["Research", "Operations", "Risk", "Investor relations"],
+      "href": "https://skyquantcapital.com/",
+      "cta": "Visit SkyQuant"
+    }
+  ],
+  "labProjects": [
+    {
+      "name": "SkyQ LEVEL",
+      "label": "Relative-value research",
+      "description": "A second relative-value book with positive calendar years in a 10-year study. Parameters remain private; the research method is available in conversation."
+    },
+    {
+      "name": "Options Edge",
+      "label": "Options research stack",
+      "description": "One-minute options panels, underlying data, and raw option data used to study cross-asset behavior around equity moves."
+    },
+    {
+      "name": "SkyQ Scan",
+      "label": "Market scanner",
+      "description": "Databento stock-scanner minute data and scanning research used to widen the opportunity set without pretending every signal is tradeable."
+    },
+    {
+      "name": "Data release",
+      "label": "Reproducible archive",
+      "description": "A 6.38 GiB, 12,269-file research archive split into four parts, with SHA-256 checksums and a one-command restore path."
+    }
+  ],
+  "experience": [
+    {
+      "role": "Founder & Researcher",
+      "company": "SkyQuant",
+      "period": "2026 — Present",
+      "location": "New York, NY",
+      "bullets": [
+        "Built the research, backtest, and paper-trading stack behind the SkyQ books, including data ingestion, execution modeling, reconciliation, and a browser control center.",
+        "Run the company-funded pilot and maintain the public research record; the strategy parameters remain private while the methodology is documented."
+      ]
+    },
+    {
+      "role": "STEM Instructor",
+      "company": "CodeAdvantage",
+      "period": "02/2024 — Present",
+      "location": "New York, NY",
+      "bullets": [
+        "Teach K–12 students coding, robotics, and game design through hands-on projects, adapting the pace and vocabulary to each group.",
+        "Co-develop curriculum and facilitate classroom exercises with teaching peers."
+      ]
+    },
+    {
+      "role": "Maker Fellow STEM Instructor",
+      "company": "MakerState",
+      "period": "02/2022 — 05/2022",
+      "location": "New York, NY",
+      "bullets": [
+        "Taught Scratch, Lego Mindstorms, web development, and science projects to K–12 students.",
+        "Turned open-ended making into structured, repeatable lessons for mixed-skill classrooms."
+      ]
+    },
+    {
+      "role": "Literacy Leader",
+      "company": "The New York Public Library",
+      "period": "09/2016 — 08/2017",
+      "location": "New York, NY",
+      "bullets": [
+        "Designed targeted reading interventions and lesson plans for struggling students.",
+        "Worked one-to-one and in small groups to improve comprehension with guided practice."
+      ]
+    },
+    {
+      "role": "Home Health Aide",
+      "company": "EZ Living Home Care of NY",
+      "period": "05/2023 — 05/2025",
+      "location": "New York, NY",
+      "bullets": [
+        "Provided daily care and coordination for elderly clients and worked closely with families and care teams.",
+        "Built the patience, documentation habits, and calm-under-pressure skills I bring to engineering work."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "City University of New York",
+      "credential": "A.A. Economics",
+      "period": "Expected 05/2028",
+      "detail": "36 credits completed · calculus, microeconomics, macroeconomics, and self-directed computer science"
+    },
+    {
+      "school": "University Neighborhood High School",
+      "credential": "Regents Diploma",
+      "period": "2017",
+      "detail": "New York, NY"
+    }
+  ],
+  "skills": [
+    {
+      "group": "Languages",
+      "items": ["Python", "TypeScript", "JavaScript", "SQL", "HTML", "CSS"]
+    },
+    {
+      "group": "Backend & data",
+      "items": ["FastAPI", "PostgreSQL", "SQLite", "pandas", "pytest", "pydantic", "REST APIs"]
+    },
+    {
+      "group": "Frontend",
+      "items": ["React", "Next.js", "Vite", "responsive design", "data visualization"]
+    },
+    {
+      "group": "Markets & systems",
+      "items": ["backtesting", "execution modeling", "risk metrics", "market-data APIs", "Git", "GitHub Actions"]
+    }
+  ],
+  "roles": [
+    "Python backend engineering",
+    "Data engineering & SQL",
+    "Market-data / execution systems",
+    "Quantitative development",
+    "Research tooling"
+  ],
+  "principles": [
+    {
+      "title": "Measure the boring thing.",
+      "body": "Costs, fills, calendars, time zones, and the difference between two data feeds decide whether a result is real."
+    },
+    {
+      "title": "Keep the negative result.",
+      "body": "A test that rejects a strategy is still evidence. I publish the cross-asset failures next to the wins."
+    },
+    {
+      "title": "Make it reproducible.",
+      "body": "Checksums, tests, fixed data windows, and written assumptions are part of the work — not cleanup after it."
+    },
+    {
+      "title": "Explain it plainly.",
+      "body": "Teaching code to beginners is the same discipline as defending a model: if the idea is clear, the language can be simple."
+    }
+  ],
+  "now": [
+    "Building the SkyQ research and execution stack.",
+    "Running the company-funded forward test before asking anyone for capital.",
+    "Studying economics at CUNY and keeping the math, physics, and computer-science reading going."
+  ],
+  "resumeSummary": "Self-taught software engineer and economics student in New York. I build reproducible market-research and execution systems in Python, SQL, and TypeScript, with a strong bias toward testing, data integrity, and clear written evidence. Teacher by practice; future economics professor by plan.",
+  "careerGoal": "Near term, I want to work on Python backend, data, or market-systems teams where correctness matters and the domain is complex. Long term, I want to teach economics and keep building research software that makes markets easier to understand."
+}

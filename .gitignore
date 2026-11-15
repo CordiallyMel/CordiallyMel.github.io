@@ -1,0 +1,12 @@
+node_modules/
+.next/
+out/
+*.log
+*.pid
+.DS_Store
+__pycache__/
+.tmp_pdf/
+resume-page-*.png
+preview-*.png
+preview-*.jpg
+preview-*.jpeg
