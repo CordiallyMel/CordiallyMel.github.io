@@ -64,8 +64,25 @@ API through `links.api`.
 | `POST /api/contact` | Validated contact submission stored in D1 |
 | `GET /api/messages?token=…` | Private message inbox |
 | `DELETE /api/messages?token=…&id=…` | Remove a message from the inbox |
+| `GET /admin` | Private inbox page for reading and deleting messages |
 
 The Worker needs a D1 binding named `DB` and a `CONTACT_ADMIN_TOKEN` secret.
-The token is intentionally not committed. Contact submissions are stored in D1;
-the Worker does not send email, so the private inbox route is the delivery path.
+The token is intentionally not committed. Open `/admin`, enter the token, and
+load the inbox; the token is kept in `sessionStorage` for that tab only. Contact
+submissions are always stored in D1 first, so a delivery failure never loses a
+message.
+
+### Email notifications
+
+Email delivery is optional and uses [Resend](https://resend.com). Set
+`RESEND_API_KEY` in the Sites Worker secrets to enable it. The notification goes
+to `MelSearles99@gmail.com` by default; override the recipient with
+`CONTACT_NOTIFY_TO` (comma-separated addresses are accepted) and the sender with
+`CONTACT_FROM`. Without `RESEND_API_KEY`, submissions still return success and
+remain available in `/admin`.
+
+The default sender, `onboarding@resend.dev`, is only for testing a Resend
+account. For production delivery, verify a domain in Resend and set
+`CONTACT_FROM` to an address on that domain.
+
 CORS allows the GitHub Pages origin and the local Next.js preview.
