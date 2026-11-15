@@ -6,7 +6,7 @@ out/
 .DS_Store
 __pycache__/
 .tmp_pdf/
-resume-page-*.png
+resume-*.png
 preview-*.png
 preview-*.jpg
 preview-*.jpeg

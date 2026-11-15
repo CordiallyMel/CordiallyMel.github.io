@@ -59,7 +59,7 @@ def p(text: str, style: ParagraphStyle) -> Paragraph:
 
 def section(title: str, styles: dict) -> list:
     return [
-        Spacer(1, 7),
+        Spacer(1, 6),
         Paragraph(title.upper(), styles["section"]),
         HRFlowable(width="100%", thickness=0.7, color=RULE, spaceBefore=1, spaceAfter=5),
     ]
@@ -207,7 +207,7 @@ def build() -> None:
         )
     )
     story.append(header)
-    story.append(Spacer(1, 8))
+    story.append(Spacer(1, 7))
     story.append(HRFlowable(width="100%", thickness=1.1, color=INK, spaceAfter=1))
 
     story += section("Summary", styles)
@@ -238,11 +238,13 @@ def build() -> None:
         story.append(Spacer(1, 3))
 
     story += section("Experience", styles)
-    resume_jobs = [
-        job
-        for job in profile["experience"]
-        if job["company"] in {"CodeAdvantage", "MakerState", "The New York Public Library"}
-    ]
+    wanted_companies = {
+        "SkyQuant",
+        "CodeAdvantage",
+        "MakerState",
+        "The New York Public Library",
+    }
+    resume_jobs = [job for job in profile["experience"] if job["company"] in wanted_companies]
     for job in resume_jobs:
         left = [
             Paragraph(escape(job["role"]), styles["job"]),
@@ -269,7 +271,7 @@ def build() -> None:
         story.append(table)
         for bullet in job["bullets"]:
             story.append(Paragraph(escape(bullet), styles["bullet"], bulletText="•"))
-        story.append(Spacer(1, 3))
+        story.append(Spacer(1, 2))
 
     story.append(
         Paragraph(
