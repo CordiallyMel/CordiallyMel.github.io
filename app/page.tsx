@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ContactForm } from "@/app/components/ContactForm";
+import { IridescentScene } from "@/app/components/IridescentScene";
 import profile from "@/content/profile.json";
 
 function SectionLabel({ index, children }: { index: string; children: React.ReactNode }) {
@@ -68,17 +69,7 @@ export default function HomePage() {
           </div>
 
           <div className="hero-art" aria-label="Selected system footprint">
-            <div className="orb-wrap" aria-hidden="true">
-              <div className="orb">
-                <span className="orb-sheen" />
-                <span className="orb-core" />
-              </div>
-              <div className="orbit orbit-one" />
-              <div className="orbit orbit-two" />
-              <span className="spark spark-one" />
-              <span className="spark spark-two" />
-              <span className="spark spark-three" />
-            </div>
+            <IridescentScene />
 
             <div className="glass console-card">
               <div className="console-top">
@@ -133,7 +124,7 @@ export default function HomePage() {
 
       <section className="section" id="work">
         <div className="shell">
-          <div className="section-head">
+          <div className="section-head" data-reveal>
             <SectionLabel index="01">Selected work</SectionLabel>
             <h2>Systems with evidence behind them.</h2>
             <p>
@@ -147,6 +138,7 @@ export default function HomePage() {
               <article
                 className={`glass project-card ${index === 0 ? "project-featured" : ""}`}
                 key={project.name}
+                data-reveal
               >
                 <div className="project-head">
                   <span className="project-number">{project.number}</span>
@@ -218,13 +210,13 @@ export default function HomePage() {
             ))}
           </div>
 
-          <div className="lab-head">
+          <div className="lab-head" data-reveal>
             <h3>Also in the lab</h3>
             <span>Research systems · private parameters</span>
           </div>
           <div className="lab-grid">
             {profile.labProjects.map((project) => (
-              <article className="glass lab-card" key={project.name}>
+              <article className="glass lab-card" key={project.name} data-reveal>
                 <span className="lab-label">{project.label}</span>
                 <h4>{project.name}</h4>
                 <p>{project.description}</p>
@@ -236,7 +228,7 @@ export default function HomePage() {
 
       <section className="section section-about" id="about">
         <div className="shell about-grid">
-          <div className="about-copy">
+          <div className="about-copy" data-reveal>
             <SectionLabel index="02">The operator</SectionLabel>
             <h2>Self-taught by necessity. Rigorous by habit.</h2>
             <p>
@@ -264,7 +256,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="glass path-card">
+          <div className="glass path-card" data-reveal>
             <span className="path-title">The path so far</span>
             <ol className="path-list">
               <li>
@@ -308,7 +300,7 @@ export default function HomePage() {
 
         <div className="shell principles">
           {profile.principles.map((principle, index) => (
-            <article className="glass principle" key={principle.title}>
+            <article className="glass principle" key={principle.title} data-reveal>
               <span className="principle-index">0{index + 1}</span>
               <h3>{principle.title}</h3>
               <p>{principle.body}</p>
@@ -319,7 +311,7 @@ export default function HomePage() {
 
       <section className="section" id="direction">
         <div className="shell">
-          <div className="glass direction-card">
+          <div className="glass direction-card" data-reveal>
             <div className="direction-main">
               <SectionLabel index="03">Direction</SectionLabel>
               <h2>Where I can help a team.</h2>
@@ -362,7 +354,7 @@ export default function HomePage() {
 
       <section className="section section-venture" id="skyquant">
         <div className="shell">
-          <div className="glass venture-card">
+          <div className="glass venture-card" data-reveal>
             <div className="venture-copy">
               <SectionLabel index="04">Venture</SectionLabel>
               <h2>Building SkyQuant in public.</h2>
@@ -410,7 +402,7 @@ export default function HomePage() {
       </section>
 
       <section className="section section-contact" id="contact">
-        <div className="shell contact-grid">
+        <div className="shell contact-grid" data-reveal>
           <div>
             <SectionLabel index="05">Contact</SectionLabel>
             <h2>Let&apos;s build something that holds up.</h2>

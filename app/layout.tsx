@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Atmosphere } from "@/app/components/Atmosphere";
+import { Motion } from "@/app/components/Motion";
 import { SiteFooter } from "@/app/components/SiteFooter";
 import { SiteHeader } from "@/app/components/SiteHeader";
 import "./globals.css";
@@ -54,6 +55,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           Skip to content
         </a>
         <Atmosphere />
+        <Motion />
         <SiteHeader />
         {children}
         <SiteFooter />
