@@ -691,9 +691,9 @@ p {
 .iridescent-stage {
   position: absolute;
   top: -42px;
-  right: -46px;
+  right: 0;
   z-index: 0;
-  width: min(620px, 108%);
+  width: min(620px, 100%);
   aspect-ratio: 1;
   pointer-events: none;
 }
