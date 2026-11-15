@@ -832,12 +832,15 @@ p {
   gap: 9px;
   padding: 11px 15px;
   border-radius: 999px;
-  color: var(--muted);
+  border-color: rgba(255, 255, 255, 0.18);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.035));
+  color: rgba(245, 242, 255, 0.78);
   font: 9px/1 var(--mono);
   letter-spacing: 0.07em;
   text-transform: uppercase;
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
 }
 
 .note-one {
