@@ -242,7 +242,6 @@ export function IridescentScene() {
       return;
     }
 
-    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const scene = new THREE.Scene();
     scene.fog = new THREE.FogExp2(0x05060b, 0.022);
 
@@ -513,7 +512,7 @@ export function IridescentScene() {
     const clock = new THREE.Clock();
 
     const onPointerMove = (event: PointerEvent) => {
-      if (reduceMotion || event.pointerType === "touch") return;
+      if (event.pointerType === "touch") return;
       const bounds = host.getBoundingClientRect();
       pointerTargetX = Math.max(
         -1,
@@ -560,24 +559,22 @@ export function IridescentScene() {
       pointerX += (pointerTargetX - pointerX) * 0.045;
       pointerY += (pointerTargetY - pointerY) * 0.045;
 
-      if (!reduceMotion) {
-        chart.rotation.y = -0.06 + pointerX * 0.1 + Math.sin(time * 0.16) * 0.018;
-        chart.rotation.x = pointerY * 0.012;
+      chart.rotation.y = -0.06 + pointerX * 0.1 + Math.sin(time * 0.16) * 0.018;
+      chart.rotation.x = pointerY * 0.012;
 
-        camera.position.x = cameraHome.x + pointerX * 0.28;
-        camera.position.y = cameraHome.y - pointerY * 0.2;
-        camera.lookAt(cameraTarget);
+      camera.position.x = cameraHome.x + pointerX * 0.28;
+      camera.position.y = cameraHome.y - pointerY * 0.2;
+      camera.lookAt(cameraTarget);
 
-        const scanProgress = (time * 0.052) % 1;
-        const scanX = -TIME_SPAN / 2 + scanProgress * TIME_SPAN;
-        scanLine.position.x = scanX;
+      const scanProgress = (time * 0.052) % 1;
+      const scanX = -TIME_SPAN / 2 + scanProgress * TIME_SPAN;
+      scanLine.position.x = scanX;
 
-        const travel = (time * 0.043) % 1;
-        const markerPoint = priceCurve.getPointAt(travel);
-        setMarker(markerPoint);
-        const pulse = 1 + Math.sin(time * 3.1) * 0.12;
-        markerHalo.scale.setScalar(pulse);
-      }
+      const travel = (time * 0.043) % 1;
+      const markerPoint = priceCurve.getPointAt(travel);
+      setMarker(markerPoint);
+      const pulse = 1 + Math.sin(time * 3.1) * 0.12;
+      markerHalo.scale.setScalar(pulse);
 
       renderer.render(scene, camera);
     };

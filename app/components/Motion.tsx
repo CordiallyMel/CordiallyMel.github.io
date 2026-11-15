@@ -9,9 +9,8 @@ export function Motion() {
   useEffect(() => {
     const root = document.documentElement;
     const targets = Array.from(document.querySelectorAll<HTMLElement>("[data-reveal]"));
-    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-    if (reduceMotion || !("IntersectionObserver" in window)) {
+    if (!("IntersectionObserver" in window)) {
       for (const target of targets) target.classList.add("is-visible");
       return;
     }

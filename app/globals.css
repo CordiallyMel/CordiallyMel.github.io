@@ -965,23 +965,21 @@ p {
   background: linear-gradient(90deg, var(--line-strong), transparent);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .hero-copy .kicker,
-  .hero-copy h1,
-  .hero-lede,
-  .hero-actions,
-  .hero-foot,
-  .hero-scroll {
-    animation: rise-in 900ms cubic-bezier(0.22, 0.72, 0.22, 1) both;
-  }
-
-  .hero-copy h1 { animation-delay: 80ms; }
-  .hero-lede { animation-delay: 150ms; }
-  .hero-actions { animation-delay: 220ms; }
-  .hero-foot { animation-delay: 290ms; }
-  .hero-art { animation: fade-in 1100ms ease 180ms both; }
-  .hero-scroll { animation-delay: 420ms; }
+.hero-copy .kicker,
+.hero-copy h1,
+.hero-lede,
+.hero-actions,
+.hero-foot,
+.hero-scroll {
+  animation: rise-in 900ms cubic-bezier(0.22, 0.72, 0.22, 1) both;
 }
+
+.hero-copy h1 { animation-delay: 80ms; }
+.hero-lede { animation-delay: 150ms; }
+.hero-actions { animation-delay: 220ms; }
+.hero-foot { animation-delay: 290ms; }
+.hero-art { animation: fade-in 1100ms ease 180ms both; }
+.hero-scroll { animation-delay: 420ms; }
 
 /* ---------- strip ---------- */
 
@@ -2475,17 +2473,6 @@ blockquote {
     align-items: flex-start;
     flex-direction: column;
     gap: 4px;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    scroll-behavior: auto !important;
-    animation-duration: 0.001ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.001ms !important;
   }
 }
 
