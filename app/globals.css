@@ -2175,6 +2175,11 @@ blockquote {
     grid-template-columns: minmax(0, 1fr) minmax(0, 0.78fr);
   }
 
+  .iridescent-stage {
+    right: 0;
+    width: min(560px, 100%);
+  }
+
   .hero-art {
     min-height: 540px;
   }
@@ -2237,8 +2242,8 @@ blockquote {
 
   .iridescent-stage {
     top: -24px;
-    right: -9%;
-    width: min(540px, 112%);
+    right: 0;
+    width: min(520px, 100%);
   }
 
   .console-card {
@@ -2374,8 +2379,8 @@ blockquote {
 
   .iridescent-stage {
     top: -12px;
-    right: -14%;
-    width: min(470px, 118%);
+    right: 0;
+    width: min(430px, 100%);
   }
 
   .console-card {
