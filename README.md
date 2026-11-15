@@ -54,8 +54,8 @@ committed image can be replaced independently on another platform.
 ## Portfolio API
 
 The contact form and live project endpoint run from `worker/index.js` on a
-separate Cloudflare Worker. `content/profile.json` points the site at that
-API through `links.api`.
+separate Cloudflare Worker. `content/profile.json` points the site at that API
+through `links.api`, currently proxied at `https://api.skyquantcapital.com`.
 
 | Route | Purpose |
 | --- | --- |
