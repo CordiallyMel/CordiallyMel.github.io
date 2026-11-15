@@ -15,7 +15,8 @@
     "skyquant": "https://skyquantcapital.com/",
     "skyquantInvest": "https://skyquantcapital.com/invest.html",
     "skyquantTeam": "https://skyquantcapital.com/team.html",
-    "email": "mailto:MelSearles99@gmail.com"
+    "email": "mailto:MelSearles99@gmail.com",
+    "api": "https://api.skyquantcapital.com"
   },
   "heroStats": [
     {
@@ -47,13 +48,42 @@
       "summary": "A causal one-minute ETF research engine that treats costs, ambiguous fills, and negative results as part of the product.",
       "description": "A Python and PostgreSQL research core with a React control center. The published record covers 67,271 SPY trades and 32,356 QQQ trades over 23 years, with stop-first fills and modeled costs. The same geometry was then tested on ten futures contracts and rejected after costs — a falsification record, not a hidden failure.",
       "metrics": [
-        { "value": "67,271", "label": "SPY trades" },
-        { "value": "16 / 24", "label": "positive SPY years" },
-        { "value": "10", "label": "futures contracts rejected" }
+        {
+          "value": "67,271",
+          "label": "SPY trades"
+        },
+        {
+          "value": "16 / 24",
+          "label": "positive SPY years"
+        },
+        {
+          "value": "10",
+          "label": "futures contracts rejected"
+        }
       ],
-      "stack": ["Python", "PostgreSQL", "SQL", "FastAPI", "React", "TypeScript", "pytest"],
+      "stack": [
+        "Python",
+        "PostgreSQL",
+        "SQL",
+        "FastAPI",
+        "React",
+        "TypeScript",
+        "pytest"
+      ],
       "href": "https://github.com/CordiallyMel/SkyQ_RANGE",
-      "cta": "View the repository"
+      "cta": "View the repository",
+      "caseStudy": {
+        "problem": "A one-minute result is only useful if the costs and fills that decide it are visible.",
+        "built": "A causal Python and PostgreSQL engine that makes stop-first fills, modeled costs, and cross-asset checks part of the test.",
+        "evidence": "67,271 SPY trades, 32,356 QQQ trades, 16/24 positive SPY years, and ten futures contracts publicly rejected after costs."
+      },
+      "visual": {
+        "src": "/work/range-equity.svg",
+        "alt": "SkyQ RANGE equity curve for SPY and QQQ from 2003 through 2026",
+        "caption": "Public research output · 2003–2026",
+        "note": "Equity study with modeled costs",
+        "fit": "contain"
+      }
     },
     {
       "number": "02",
@@ -62,13 +92,42 @@
       "summary": "An execution-aware backtest and paper-trading system built across five broker and market-data APIs.",
       "description": "A 43,249-trade replay engine with a 160-test suite, crash recovery, order reconciliation, an NYSE-aware calendar, and a tick-to-bar path verified against broker data. The engine, methodology, and walkthrough are available; the live rule set stays private.",
       "metrics": [
-        { "value": "43,249", "label": "replay trades" },
-        { "value": "160", "label": "automated tests" },
-        { "value": "5", "label": "broker / data APIs" }
+        {
+          "value": "43,249",
+          "label": "replay trades"
+        },
+        {
+          "value": "160",
+          "label": "automated tests"
+        },
+        {
+          "value": "5",
+          "label": "broker / data APIs"
+        }
       ],
-      "stack": ["Python", "pytest", "Alpaca", "IBKR", "MetaTrader 5", "Databento", "LSE"],
+      "stack": [
+        "Python",
+        "pytest",
+        "Alpaca",
+        "IBKR",
+        "MetaTrader 5",
+        "Databento",
+        "LSE"
+      ],
       "href": "mailto:MelSearles99@gmail.com?subject=SkyQ%20Sigma%20S%20walkthrough",
-      "cta": "Request a walkthrough"
+      "cta": "Request a walkthrough",
+      "caseStudy": {
+        "problem": "A backtest is not production evidence when restarts and broker reconciliation are untested.",
+        "built": "An execution-aware paper engine with crash recovery, order reconciliation, and an NYSE-aware calendar across five data APIs.",
+        "evidence": "43,249 replayed trades and a 160-test suite; the methodology is available while the live rule set stays private."
+      },
+      "visual": {
+        "src": "/work/sigma-equity.svg",
+        "alt": "SkyQ Sigma S 24-year SPY account value chart",
+        "caption": "Sigma S · 24-year study",
+        "note": "Hypothetical account value; not a fund track record",
+        "fit": "contain"
+      }
     },
     {
       "number": "03",
@@ -77,13 +136,39 @@
       "summary": "A first fund built in the right order: company-funded pilot, public evidence, then an anchor-led vehicle.",
       "description": "A 12-month real-money pilot using $2,000–$5,000 of saved company capital and one SPY share. The proposed next step is a $25M–$50M fund with a 1/10 founders class, 1.5/15 standard terms, a 5% hurdle, and a high-water mark. No fund exists today.",
       "metrics": [
-        { "value": "$2k–$5k", "label": "pilot capital" },
-        { "value": "12 mo", "label": "public record target" },
-        { "value": "$25M–$50M", "label": "proposed fund" }
+        {
+          "value": "$2k–$5k",
+          "label": "pilot capital"
+        },
+        {
+          "value": "12 mo",
+          "label": "public record target"
+        },
+        {
+          "value": "$25M–$50M",
+          "label": "proposed fund"
+        }
       ],
-      "stack": ["Research", "Operations", "Risk", "Investor relations"],
+      "stack": [
+        "Research",
+        "Operations",
+        "Risk",
+        "Investor relations"
+      ],
       "href": "https://skyquantcapital.com/",
-      "cta": "Visit SkyQuant"
+      "cta": "Visit SkyQuant",
+      "caseStudy": {
+        "problem": "A first fund should not be sold before there is a record.",
+        "built": "A company-funded pilot with saved capital, one SPY share, monthly reconciliation, and a written operating standard.",
+        "evidence": "$2k–$5k pilot capital, a 12-month public record target, and a proposed $25M–$50M fund only after evidence. No fund today."
+      },
+      "visual": {
+        "src": "/work/skyquant-home.webp",
+        "alt": "SkyQuant Capital homepage describing the company-funded pilot and proposed fund",
+        "caption": "SkyQuant Capital · live site",
+        "note": "Company-funded pilot; no fund exists today",
+        "fit": "cover"
+      }
     }
   ],
   "labProjects": [
@@ -177,19 +262,47 @@
   "skills": [
     {
       "group": "Languages",
-      "items": ["Python", "TypeScript", "JavaScript", "SQL", "HTML", "CSS"]
+      "items": [
+        "Python",
+        "TypeScript",
+        "JavaScript",
+        "SQL",
+        "HTML",
+        "CSS"
+      ]
     },
     {
       "group": "Backend & data",
-      "items": ["FastAPI", "PostgreSQL", "SQLite", "pandas", "pytest", "pydantic", "REST APIs"]
+      "items": [
+        "FastAPI",
+        "PostgreSQL",
+        "SQLite",
+        "pandas",
+        "pytest",
+        "pydantic",
+        "REST APIs"
+      ]
     },
     {
       "group": "Frontend",
-      "items": ["React", "Next.js", "Vite", "responsive design", "data visualization"]
+      "items": [
+        "React",
+        "Next.js",
+        "Vite",
+        "responsive design",
+        "data visualization"
+      ]
     },
     {
       "group": "Markets & systems",
-      "items": ["backtesting", "execution modeling", "risk metrics", "market-data APIs", "Git", "GitHub Actions"]
+      "items": [
+        "backtesting",
+        "execution modeling",
+        "risk metrics",
+        "market-data APIs",
+        "Git",
+        "GitHub Actions"
+      ]
     }
   ],
   "roles": [

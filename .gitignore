@@ -3,6 +3,8 @@ node_modules/
 out/
 *.log
 *.pid
+.env*.local
+.contact-admin-token
 .DS_Store
 __pycache__/
 .tmp_pdf/
@@ -10,3 +12,5 @@ resume-*.png
 preview-*.png
 preview-*.jpg
 preview-*.jpeg
+skyquant-home-raw.png
+svg-*-preview.png

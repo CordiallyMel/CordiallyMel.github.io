@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ContactForm } from "@/app/components/ContactForm";
 import profile from "@/content/profile.json";
 
 function SectionLabel({ index, children }: { index: string; children: React.ReactNode }) {
@@ -151,6 +152,22 @@ export default function HomePage() {
                   <span className="project-number">{project.number}</span>
                   <span className="project-eyebrow">{project.eyebrow}</span>
                 </div>
+                {project.visual && (
+                  <figure
+                    className={`project-visual ${project.visual.fit === "contain" ? "is-chart" : ""}`}
+                  >
+                    <img
+                      src={project.visual.src}
+                      alt={project.visual.alt}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <figcaption>
+                      <span>{project.visual.caption}</span>
+                      <small>{project.visual.note}</small>
+                    </figcaption>
+                  </figure>
+                )}
                 <div className="project-body">
                   <div className="project-copy">
                     <h3>{project.name}</h3>
@@ -173,6 +190,22 @@ export default function HomePage() {
                     ))}
                   </div>
                 </div>
+                {project.caseStudy && (
+                  <div className="case-study">
+                    <div>
+                      <span>Problem</span>
+                      <p>{project.caseStudy.problem}</p>
+                    </div>
+                    <div>
+                      <span>Built</span>
+                      <p>{project.caseStudy.built}</p>
+                    </div>
+                    <div>
+                      <span>Evidence</span>
+                      <p>{project.caseStudy.evidence}</p>
+                    </div>
+                  </div>
+                )}
                 <div className="project-foot">
                   <ExternalLink className="text-link" href={project.href}>
                     {project.cta} <span aria-hidden="true">↗</span>
@@ -394,8 +427,10 @@ export default function HomePage() {
               <ExternalLink href={profile.links.github}>GitHub ↗</ExternalLink>
               <ExternalLink href={profile.links.linkedin}>LinkedIn ↗</ExternalLink>
               <Link href="/resume/">Résumé ↗</Link>
+              <ExternalLink href={`${profile.links.api}/api/projects`}>Live API ↗</ExternalLink>
             </div>
             <span className="contact-location">{profile.location}</span>
+            <ContactForm apiBase={profile.links.api} email={profile.email} />
           </div>
         </div>
       </section>
