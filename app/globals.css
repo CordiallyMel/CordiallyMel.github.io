@@ -1623,8 +1623,8 @@ blockquote {
 
 .venture-mark span {
   display: inline-block;
-  padding: 0 0.04em 0.12em 0;
-  margin-bottom: -0.08em;
+  padding: 0.12em 0.16em 0.2em 0.12em;
+  margin-bottom: -0.12em;
   font: 400 clamp(56px, 7vw, 110px) / 1 var(--serif);
   letter-spacing: -0.08em;
   background: linear-gradient(110deg, #fff 5%, #9eeaff 35%, #ffb7ec 70%, #ffe4a8);
