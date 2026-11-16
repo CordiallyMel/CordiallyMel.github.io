@@ -185,10 +185,7 @@ def build() -> None:
             [
                 [
                     Paragraph(escape(profile["name"]), styles["name"]),
-                    Paragraph(
-                        "Software engineer | market systems | economics student",
-                        styles["title"],
-                    ),
+                    Paragraph(escape(profile["resumeTitle"]), styles["title"]),
                 ],
                 Paragraph("<br/>".join(escape(item) for item in contact), styles["contact"]),
             ]
@@ -223,7 +220,7 @@ def build() -> None:
         )
 
     story += section("Selected projects", styles)
-    for project in profile["projects"]:
+    for project in profile["resumeProjects"]:
         metrics = "  |  ".join(f"{item['value']} {item['label']}" for item in project["metrics"])
         story.append(
             Paragraph(
@@ -270,7 +267,7 @@ def build() -> None:
         )
         story.append(table)
         for bullet in job["bullets"]:
-            story.append(Paragraph(escape(bullet), styles["bullet"], bulletText="•"))
+            story.append(Paragraph(escape(bullet), styles["bullet"], bulletText="-"))
         story.append(Spacer(1, 2))
 
     story.append(
@@ -307,10 +304,6 @@ def build() -> None:
         story.append(p(school["detail"], styles["small"]))
         story.append(Spacer(1, 3))
 
-    story += section("Direction", styles)
-    story.append(p(profile["careerGoal"], styles["body"]))
-    story.append(Spacer(1, 3))
-    story.append(p("Open to: " + " | ".join(profile["roles"]), styles["small"]))
 
     doc.build(story)
     print(f"wrote {OUTPUT_PATH} ({OUTPUT_PATH.stat().st_size:,} bytes)")

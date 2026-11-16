@@ -22,6 +22,7 @@ const PROJECTS = [
       qqq_trades: 32356,
       positive_spy_years: "16/24",
       futures_rejected: 10,
+      core_tests: 54,
       data_window: "2003-2026",
     },
     links: {
@@ -38,7 +39,7 @@ const PROJECTS = [
       "An execution-aware backtest and paper-trading system built across five broker and market-data APIs.",
     evidence: {
       replay_trades: 43249,
-      automated_tests: 160,
+      execution_tests: "execution, reconciliation, calendar",
       integrations: 5,
       rule_set: "private",
     },

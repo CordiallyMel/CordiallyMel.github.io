@@ -31,9 +31,7 @@ export default function ResumePage() {
           <div>
             <p className="resume-kicker">New York, NY · Open to early-career roles</p>
             <h1>{profile.name}</h1>
-            <p className="resume-title">
-              Software engineer · market systems · economics student
-            </p>
+            <p className="resume-title">{profile.resumeTitle}</p>
           </div>
           <div className="resume-contact">
             <a href={profile.links.email}>{profile.email}</a>
@@ -67,7 +65,7 @@ export default function ResumePage() {
         <section className="resume-section">
           <h2>Selected projects</h2>
           <div className="resume-projects">
-            {profile.projects.map((project) => (
+            {profile.resumeProjects.map((project) => (
               <article key={project.name}>
                 <div className="resume-project-head">
                   <h3>{project.name}</h3>
@@ -125,15 +123,6 @@ export default function ResumePage() {
           </div>
         </section>
 
-        <section className="resume-section resume-direction">
-          <h2>Direction</h2>
-          <p>{profile.careerGoal}</p>
-          <div className="resume-role-list">
-            {profile.roles.map((role) => (
-              <span key={role}>{role}</span>
-            ))}
-          </div>
-        </section>
       </article>
     </main>
   );
