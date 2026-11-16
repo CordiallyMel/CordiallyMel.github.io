@@ -2783,6 +2783,18 @@ blockquote {
   }
 }
 
+@media (min-width: 1241px) and (max-height: 760px) {
+  /* Keep the full desktop hero above the fold in short or zoomed viewports. */
+  .hero {
+    padding-top: 32px;
+    padding-bottom: 10px;
+  }
+
+  .hero-art {
+    min-height: 0;
+  }
+}
+
 @media (min-width: 1081px) and (max-width: 1240px) {
   /* Hand the bridge into the desktop ratio without reintroducing the old jump. */
   .hero {
