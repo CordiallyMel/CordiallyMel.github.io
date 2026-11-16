@@ -2735,4 +2735,74 @@ blockquote {
   .iridescent-stage {
     width: 100%;
   }
+
+  /* Keep the phone hero compact enough to reach the chart quickly. */
+  .hero {
+    padding-top: 44px;
+    padding-bottom: 16px;
+  }
+
+  .hero-grid {
+    gap: 14px;
+  }
+
+  .kicker {
+    margin-bottom: 18px;
+  }
+
+  .hero h1 {
+    font-size: clamp(42px, 12vw, 62px);
+    line-height: 0.92;
+  }
+
+  .hero-lede {
+    margin-top: 16px;
+    font-size: 15.5px;
+    line-height: 1.55;
+  }
+
+  .hero-actions {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+    gap: 8px;
+    margin-top: 20px;
+  }
+
+  .hero-actions .button {
+    width: 100%;
+    min-height: 46px;
+    padding: 0 10px;
+    font-size: 12px;
+    gap: 6px;
+  }
+
+  .hero-foot {
+    grid-template-columns: 1fr 1fr;
+    gap: 6px 14px;
+    margin-top: 22px;
+    padding-top: 14px;
+    font-size: 9px;
+    line-height: 1.5;
+  }
+
+  .hero-foot b {
+    display: inline;
+    margin: 0 5px 0 0;
+  }
+
+  .hero-foot span:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .hero-art {
+    margin-top: 2px;
+  }
+
+  .console-grid {
+    margin: 14px 0 12px;
+  }
+
+  .hero-scroll {
+    margin-top: 8px;
+  }
 }
