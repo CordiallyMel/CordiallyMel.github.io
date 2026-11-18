@@ -8,18 +8,22 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://cordiallymel.github.io"),
   title: {
-    default: "Mel Searles — Market systems, software, economics",
+    default: "Mel Searles — Software engineer, full-stack TypeScript & Python",
     template: "%s · Mel Searles",
   },
   description:
-    "Mel Searles builds reproducible market-research and execution systems in Python, SQL, and TypeScript. Economics student at CUNY, founder of SkyQuant, and future economics professor.",
+    "Mel Searles is a software engineer in New York building full-stack systems in TypeScript, React, Node, Python, and SQL — market-research platforms, execution tooling, and this site. Economics student at CUNY and founder of SkyQuant.",
   keywords: [
     "Mel Searles",
+    "software engineer",
+    "full-stack developer",
+    "TypeScript developer",
+    "React developer",
+    "Node.js developer",
     "Python developer",
     "market data engineer",
     "quantitative developer",
     "SQL",
-    "TypeScript",
     "New York",
     "SkyQuant",
   ],
@@ -28,17 +32,17 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "Mel Searles",
-    title: "Mel Searles — Market systems, software, economics",
+    title: "Mel Searles — Software engineer, full-stack TypeScript & Python",
     description:
-      "I build market systems with a researcher's discipline. Python, SQL, TypeScript, and reproducible evidence.",
+      "I build full-stack systems with a researcher's discipline. TypeScript, React, Node, Python, SQL, and reproducible evidence.",
     url: "/",
     images: [{ url: "/og.png", width: 1200, height: 630, alt: "Mel Searles — market systems, software, economics" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mel Searles — Market systems, software, economics",
+    title: "Mel Searles — Software engineer, full-stack TypeScript & Python",
     description:
-      "I build market systems with a researcher's discipline. Python, SQL, TypeScript, and reproducible evidence.",
+      "I build full-stack systems with a researcher's discipline. TypeScript, React, Node, Python, SQL, and reproducible evidence.",
     images: ["/og.png"],
   },
   icons: {

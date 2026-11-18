@@ -70,25 +70,25 @@ def build() -> None:
     draw.text((58, 164), "MEL SEARLES", font=font("serif-bold", 76), fill="#f8f4ff")
     draw.text(
         (60, 260),
-        "MARKET SYSTEMS  ·  SOFTWARE  ·  ECONOMICS",
+        "SOFTWARE ENGINEER  ·  FULL-STACK  ·  MARKETS",
         font=font("sans-bold", 19),
         fill="#9feaff",
     )
     draw.text(
         (60, 330),
-        "I build reproducible research and execution systems",
+        "I build full-stack systems with a researcher's",
         font=font("sans", 34),
         fill="#d8d0ed",
     )
     draw.text(
         (60, 378),
-        "in Python, SQL, and TypeScript — then test them until",
+        "discipline: TypeScript and React in the interface,",
         font=font("sans", 34),
         fill="#d8d0ed",
     )
     draw.text(
         (60, 426),
-        "the evidence is boring.",
+        "Python and SQL behind it.",
         font=font("sans", 34),
         fill="#d8d0ed",
     )
@@ -100,7 +100,7 @@ def build() -> None:
     )
     draw.text(
         (60, 574),
-        "Python / SQL / TypeScript  ·  New York",
+        "TypeScript / React / Node / Python  ·  New York",
         font=font("sans", 15),
         fill="#a29ab8",
     )

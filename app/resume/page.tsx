@@ -5,7 +5,7 @@ import profile from "@/content/profile.json";
 export const metadata: Metadata = {
   title: "Résumé",
   description:
-    "Melchezidek Searles — self-taught software engineer and economics student in New York. Python, SQL, TypeScript, market systems, and research.",
+    "Melchezidek Searles — software engineer and economics student in New York. Full-stack TypeScript, React, and Node with Python, SQL, and market systems.",
   alternates: {
     canonical: "/resume/",
   },
@@ -29,7 +29,9 @@ export default function ResumePage() {
       <article className="resume-sheet">
         <header className="resume-header">
           <div>
-            <p className="resume-kicker">New York, NY · Open to early-career roles</p>
+            <p className="resume-kicker">
+              New York, NY · Open to software engineering &amp; full-stack roles
+            </p>
             <h1>{profile.name}</h1>
             <p className="resume-title">{profile.resumeTitle}</p>
           </div>

@@ -44,7 +44,7 @@ export default function HomePage() {
               {profile.kicker}
             </p>
             <h1>
-              I build market systems with a <span className="iridescent-text">researcher&apos;s discipline.</span>
+              I build full-stack systems with a <span className="iridescent-text">researcher&apos;s discipline.</span>
             </h1>
             <p className="hero-lede">{profile.intro}</p>
             <div className="hero-actions">
@@ -63,7 +63,7 @@ export default function HomePage() {
                 <b>Now</b> building SkyQuant&apos;s research desk
               </span>
               <span>
-                <b>Open to</b> early-career software, data &amp; market-systems roles
+                <b>Open to</b> software engineering, full-stack &amp; data roles
               </span>
             </div>
           </div>
@@ -95,7 +95,7 @@ export default function HomePage() {
 
             <div className="glass floating-note note-one">
               <span className="note-dot" aria-hidden="true" />
-              Python · SQL · TypeScript
+              TypeScript · React · Node · Python
             </div>
             <div className="glass floating-note note-two">
               <span className="note-line" aria-hidden="true" />
@@ -316,9 +316,10 @@ export default function HomePage() {
               <SectionLabel index="03">Direction</SectionLabel>
               <h2>Where I can help a team.</h2>
               <p>
-                I am looking for a learning-dense early-career seat where Python, data, and
-                market systems meet. I would rather own a hard, unglamorous problem than ship a
-                shallow feature.
+                I am looking for a learning-dense early-career seat in software engineering —
+                TypeScript and React in the interface, Python services and SQL behind it, and
+                market data as the domain. I would rather own a hard, unglamorous problem than
+                ship a shallow feature.
               </p>
               <div className="role-grid">
                 {profile.roles.map((role) => (

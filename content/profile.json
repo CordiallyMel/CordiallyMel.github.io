@@ -5,10 +5,10 @@
   "location": "New York, NY",
   "email": "MelSearles99@gmail.com",
   "phone": "(929) 369-2727",
-  "kicker": "New York · Python / SQL / TypeScript",
-  "headline": "I build market systems with a researcher's discipline.",
-  "intro": "Economics student, self-taught engineer, and founder of SkyQuant. I turn noisy market data into reproducible systems — then keep testing until the evidence is boring.",
-  "shortBio": "I am an economics student at CUNY and a self-taught software engineer based in New York. I build research and execution systems for markets, with a bias toward reproducibility, clean data, and evidence that survives an audit.",
+  "kicker": "New York · TypeScript / React / Node · Python",
+  "headline": "I build full-stack systems with a researcher's discipline.",
+  "intro": "Economics student, self-taught engineer, and founder of SkyQuant. I build market systems end to end — typed React interfaces, Node and edge APIs, and the Python and SQL engines underneath — then keep testing until the evidence is boring.",
+  "shortBio": "I am an economics student at CUNY and a self-taught software engineer based in New York. I build full-stack systems for markets — TypeScript and React front ends, Node and edge APIs, Python and SQL engines — with a bias toward reproducibility, clean data, and evidence that survives an audit.",
   "links": {
     "github": "https://github.com/CordiallyMel",
     "linkedin": "https://www.linkedin.com/in/melchezidek-searles/",
@@ -131,6 +131,43 @@
     },
     {
       "number": "03",
+      "name": "This portfolio",
+      "eyebrow": "Full-stack TypeScript · live",
+      "summary": "A Next.js and React front end with a TypeScript edge API, SQL storage, and a CI deploy pipeline — the site you are reading.",
+      "description": "A static-exported Next.js 16 app in React 19 and TypeScript, with a hand-built CSS system and a 3D hero. A Cloudflare Worker serves the project data, validates and stores contact submissions in D1, and exposes a token-gated inbox for reading them; GitHub Actions builds and publishes every push to Pages. The résumé PDF is generated from the same JSON that renders this page, so the site and the document cannot drift.",
+      "metrics": [
+        {
+          "value": "Next.js 16",
+          "label": "static export"
+        },
+        {
+          "value": "React 19",
+          "label": "TypeScript UI"
+        },
+        {
+          "value": "1",
+          "label": "edge API with D1"
+        }
+      ],
+      "stack": [
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Node.js",
+        "Cloudflare Workers",
+        "D1",
+        "GitHub Actions"
+      ],
+      "href": "https://cordiallymel.github.io/",
+      "cta": "Open the live site",
+      "caseStudy": {
+        "problem": "A portfolio is the first project a hiring team reads, so it has to be built rather than templated.",
+        "built": "A typed React front end, an edge API with validated writes and a private inbox, and one JSON content source that also generates the résumé PDF.",
+        "evidence": "Live on GitHub Pages, deployed by CI on every push, with a contact form that stores submissions in D1 before any email is attempted."
+      }
+    },
+    {
+      "number": "04",
       "name": "SkyQuant Capital",
       "eyebrow": "Venture · research desk",
       "summary": "A first fund built in the right order: company-funded pilot, public evidence, then an anchor-led vehicle.",
@@ -228,28 +265,31 @@
       ]
     },
     {
-      "name": "SkyQ data release",
-      "eyebrow": "Reproducible archive · public",
-      "summary": "Packaged a 6.38 GiB, 12,269-file one-minute market-data archive into four verified parts with SHA-256 manifests and a one-command restore path.",
+      "name": "Portfolio & edge API",
+      "eyebrow": "Full-stack TypeScript · live",
+      "summary": "Built a Next.js 16, React 19, and TypeScript portfolio with a Cloudflare Worker API that validates contact submissions into D1, a token-gated inbox, and CI deployment to GitHub Pages from a single JSON content source.",
       "metrics": [
         {
-          "value": "6.38 GiB",
-          "label": "archive size"
+          "value": "Next.js 16",
+          "label": "static export"
         },
         {
-          "value": "12,269",
-          "label": "files"
+          "value": "React 19",
+          "label": "TypeScript UI"
         },
         {
-          "value": "4",
-          "label": "verified parts"
+          "value": "1",
+          "label": "edge API"
         }
       ],
       "stack": [
-        "Python",
-        "SHA-256",
-        "GitHub Releases",
-        "CI"
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Node.js",
+        "Cloudflare Workers",
+        "D1",
+        "GitHub Actions"
       ]
     }
   ],
@@ -348,16 +388,19 @@
         "Python",
         "SQL",
         "TypeScript",
-        "JavaScript"
+        "JavaScript",
+        "HTML/CSS"
       ]
     },
     {
       "group": "Backend & data",
       "items": [
         "FastAPI",
+        "Node.js",
+        "Cloudflare Workers",
         "PostgreSQL",
         "SQLite",
-        "pandas",
+        "D1",
         "REST APIs",
         "data pipelines",
         "data modeling"
@@ -382,6 +425,7 @@
         "Next.js",
         "Vite",
         "responsive design",
+        "accessible UI",
         "data visualization"
       ]
     },
@@ -396,11 +440,12 @@
     }
   ],
   "roles": [
+    "Software engineering (TypeScript · React · Node)",
+    "Full-stack development",
     "Python backend engineering",
     "Data engineering & SQL",
     "Market-data / execution systems",
-    "Quantitative development",
-    "Research tooling"
+    "Quantitative development"
   ],
   "principles": [
     {
@@ -423,9 +468,10 @@
   "now": [
     "Building the SkyQ research and execution stack.",
     "Running the company-funded forward test before asking anyone for capital.",
-    "Studying economics at CUNY and keeping the math, physics, and computer-science reading going."
+    "Studying economics at CUNY and keeping the math, physics, and computer-science reading going.",
+    "Shipping the TypeScript front end and edge API behind this site."
   ],
-  "resumeTitle": "Software Engineer | Python / SQL / TypeScript | Data & Market Systems",
-  "resumeSummary": "Software engineer and economics student in New York. I build reproducible Python and SQL systems: a 24-year research platform built on 8.5M one-minute bars, with FastAPI, PostgreSQL, React/TypeScript, CI, release auditing, and 54 core tests. I document failed cross-asset tests and the assumptions behind every result. Seeking early-career Python backend, data engineering, or quantitative development roles.",
-  "careerGoal": "Near term, I want to work on Python backend, data, or market-systems teams where correctness matters and the domain is complex. Long term, I want to teach economics and keep building research software that makes markets easier to understand."
+  "resumeTitle": "Software Engineer · Full-stack TypeScript / React / Node · Python / SQL",
+  "resumeSummary": "Software engineer in New York building full-stack systems: TypeScript, React, and Next.js interfaces on Node and edge APIs, backed by Python, SQL, and PostgreSQL services. Recent work includes a 24-year research platform over 8.5M one-minute bars (54 core tests, CI, release auditing) and the live portfolio with a Cloudflare Worker API and D1 storage. Economics student at CUNY; failed cross-asset tests are documented as carefully as the wins. Seeking early-career software engineering and full-stack roles.",
+  "careerGoal": "Near term, I want to work on a software engineering or full-stack team building products where correctness matters and the domain is complex — TypeScript and React in the interface, Python and SQL behind it. Long term, I want to teach economics and keep building research software that makes markets easier to understand."
 }
