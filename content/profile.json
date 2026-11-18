@@ -164,6 +164,13 @@
         "problem": "A portfolio is the first project a hiring team reads, so it has to be built rather than templated.",
         "built": "A typed React front end, an edge API with validated writes and a private inbox, and one JSON content source that also generates the résumé PDF.",
         "evidence": "Live on GitHub Pages, deployed by CI on every push, with a contact form that stores submissions in D1 before any email is attempted."
+      },
+      "visual": {
+        "src": "/og.png",
+        "alt": "The Mel Searles portfolio social card: software engineer, full-stack, markets",
+        "caption": "cordiallymel.github.io · live",
+        "note": "Next.js static export deployed by CI",
+        "fit": "cover"
       }
     },
     {

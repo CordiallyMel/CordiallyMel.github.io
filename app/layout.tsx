@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     description:
       "I build full-stack systems with a researcher's discipline. TypeScript, React, Node, Python, SQL, and reproducible evidence.",
     url: "/",
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Mel Searles — market systems, software, economics" }],
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Mel Searles — software engineer, full-stack TypeScript and Python" }],
   },
   twitter: {
     card: "summary_large_image",
