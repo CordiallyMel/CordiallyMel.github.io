@@ -270,13 +270,6 @@ def build() -> None:
             story.append(Paragraph(escape(bullet), styles["bullet"], bulletText="-"))
         story.append(Spacer(1, 2))
 
-    story.append(
-        Paragraph(
-            "<b>Additional experience:</b> Home Health Aide, EZ Living Home Care of NY "
-            "(05/2023-05/2025) - direct client care, family coordination, and careful documentation.",
-            styles["small"],
-        )
-    )
 
     story += section("Education", styles)
     for school in profile["education"]:

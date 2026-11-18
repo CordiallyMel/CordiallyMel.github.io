@@ -237,10 +237,9 @@ export default function HomePage() {
               building something that forces me to understand them.
             </p>
             <p>
-              Before markets, I taught coding and robotics to K–12 students, designed literacy
-              interventions at the New York Public Library, and worked as a home health aide. Those
-              jobs taught me how to explain complex ideas, document carefully, and stay calm when
-              the stakes are human.
+              Before markets, I taught coding and robotics to K–12 students and designed literacy
+              interventions at the New York Public Library. Those jobs taught me how to explain
+              complex ideas, document carefully, and stay calm when the stakes are human.
             </p>
             <blockquote>
               My long-term goal is to teach economics. I want the classroom to be grounded in
