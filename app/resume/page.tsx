@@ -38,7 +38,7 @@ export default function ResumePage() {
           <div className="resume-contact">
             <a href={profile.links.email}>{profile.email}</a>
             <a href={profile.links.linkedin} target="_blank" rel="noreferrer">
-              linkedin.com/in/melchezidek-searles
+              linkedin.com/in/mel-searles
             </a>
             <a href={profile.links.github} target="_blank" rel="noreferrer">
               github.com/CordiallyMel

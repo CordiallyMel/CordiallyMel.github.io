@@ -68,6 +68,12 @@ def section(title: str, styles: dict) -> list:
 def build() -> None:
     profile = load_profile()
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    resume_name = profile.get("resumeName") or profile["name"]
+    linkedin_line = profile.get("links", {}).get("linkedin", "").rstrip("/")
+    for prefix in ("https://www.", "https://", "http://www.", "http://"):
+        if linkedin_line.startswith(prefix):
+            linkedin_line = linkedin_line[len(prefix):]
+            break
 
     doc = SimpleDocTemplate(
         str(OUTPUT_PATH),
@@ -76,8 +82,8 @@ def build() -> None:
         leftMargin=0.52 * inch,
         topMargin=0.42 * inch,
         bottomMargin=0.38 * inch,
-        title=f"{profile['name']} — Résumé",
-        author=profile["name"],
+        title=f"{resume_name} — Résumé",
+        author=resume_name,
         subject="Software engineering, market systems, and economics",
     )
 
@@ -175,7 +181,7 @@ def build() -> None:
     story: list = []
     contact = [
         profile["email"],
-        "linkedin.com/in/melchezidek-searles",
+        linkedin_line or "linkedin.com/in/mel-searles",
         "github.com/CordiallyMel",
         profile["phone"],
         profile["location"],
@@ -184,7 +190,7 @@ def build() -> None:
         [
             [
                 [
-                    Paragraph(escape(profile["name"]), styles["name"]),
+                    Paragraph(escape(resume_name), styles["name"]),
                     Paragraph(escape(profile["resumeTitle"]), styles["title"]),
                 ],
                 Paragraph("<br/>".join(escape(item) for item in contact), styles["contact"]),

@@ -1,5 +1,6 @@
 {
   "name": "Melchezidek Searles",
+  "resumeName": "Mel Searles",
   "displayName": "Mel Searles",
   "initials": "MS",
   "location": "New York, NY",
@@ -11,7 +12,7 @@
   "shortBio": "I am an economics student at CUNY and a self-taught software engineer based in New York. I build full-stack systems for markets — TypeScript and React front ends, Node and edge APIs, Python and SQL engines — with a bias toward reproducibility, clean data, and evidence that survives an audit.",
   "links": {
     "github": "https://github.com/CordiallyMel",
-    "linkedin": "https://www.linkedin.com/in/melchezidek-searles/",
+    "linkedin": "https://www.linkedin.com/in/mel-searles/",
     "skyquant": "https://skyquantcapital.com/",
     "skyquantInvest": "https://skyquantcapital.com/invest.html",
     "skyquantTeam": "https://skyquantcapital.com/team.html",
